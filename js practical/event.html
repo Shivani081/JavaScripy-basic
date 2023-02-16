@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="submit" name="submit" value="onclick here"  onclick="myfunction()">  <!-- onclick HTML EVENT-->
+<input type="submit" name="submit" value="ondblclick here" ondblclick="myfunction()">  <!-- onclick HTML EVENT-->
+<input type="submit" name="submit" value="onmouseover here" onmouseover="myfunction()">  <!-- onclick HTML EVENT-->
+<input type="submit" name="submit" value="onmouseout here" onmouseout="myfunction()">  <!-- onclick HTML EVENT-->
+
+<!-- onclick HTML EVENT-->
+<h1 id="name"> Shivani</h1>
+
+<input type="text" id="demo" onkeypress="myfunction1()">
+
+
+
+<script>
+	// function of javasript
+	function myfunction()
+	{
+		document.getElementById('name').innerHTML="This is all HTML EVENTS";	
+	}
+	function myfunction1()
+	{
+		document.getElementById('demo').style.color="red";
+		document.getElementById('demo').style.backgroundColor="yellow";		
+		document.getElementById('demo').style.textTransform="uppercase";
+	}
+</script>
+</body>
+</html>
